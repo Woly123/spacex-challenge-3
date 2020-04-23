@@ -1,0 +1,107 @@
+/*Dit is de stijl voor kleine aparaten, denk aan telefoons.*/
+@font-face{
+    font-family: spacefont;
+    src: url("../fonts/spacefont.ttf");
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+.chart-title {
+    font-size: 2rem;
+    height: 1.2rem;
+    flex: 0 auto;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    padding: 8px;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-radius:5px;
+}
+
+.block {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 20px;
+    background: rgba(0, 0,0,0.3);
+    margin: 8px 0px;
+}
+
+
+.chart-title {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+#wolk {
+    color: #E8E8E8;
+    font-size: 200pt;
+}
+
+.header {
+    background-color: #005288;
+}
+
+img {
+    width: 90%;
+}
+
+body {
+    font-family: spacefont;
+    background-image: linear-gradient(to top right, aquamarine, skyblue);
+}
+
+canvas {
+    height: auto !important;
+    width: auto !important;
+}
+
+/*Hieronder de stijl voor medium grote aparaten, denk aan tablet*/
+@media (min-width: 700px) {
+    .block:hover {
+        background-color: black;
+        transition: background-color 0.5s ease;
+    }
+
+    .B1, .B2 {
+        flex: 1;
+        max-width: calc(50% - 8px);
+    }
+}
+/*Hieronder de stijl voor grote aparaten, denk aan laptop/desktop*/
+@media (min-width: 1000px) {
+    .container {
+        justify-content: space-between;
+    }
+
+    .B3 {
+        flex: 0 0 auto;
+        width: calc(50% - 8px);
+        margin: 8px auto;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+/*Hieronder de stijl voor nog grote aparaten, denk aan grote ruimteschermen*/
+@media (min-width: 1400px) {
+    .B1, .B2, .B3 {
+        flex: 1;
+        max-width: calc((100% / 3) - 8px);
+        margin: 0px;
+    }
+}
