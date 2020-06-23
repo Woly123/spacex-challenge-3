@@ -64,11 +64,6 @@ body {
     background-image: linear-gradient(to top right, aquamarine, skyblue);
 }
 
-canvas {
-    height: auto !important;
-    width: auto !important;
-}
-
 /*Hieronder de stijl voor medium grote aparaten, denk aan tablet*/
 @media (min-width: 700px) {
     .block:hover {
